@@ -18,7 +18,7 @@ nextBtn.addEventListener('click', () => {
 
 
 previousBtn.addEventListener('click', () => {
-    counter = (counter > 0) ? counter - 1 : 5;
+    counter = (counter > 0) ? counter - 1 : 0;
     sliders.style.transform = 'translate(' + (counter) * -15 + '%)';
 })
 
