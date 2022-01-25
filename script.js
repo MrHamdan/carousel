@@ -10,6 +10,13 @@ const nextBtn = document.getElementById('button-right');
 
 let counter = 0;
 
+// Slider Autoplay
+setInterval(() => {
+    counter = (counter < 5) ? counter + 1 : 0;
+    sliders.style.transform = 'translate(' + (counter) * -15 + '%)';
+
+}, 2000);
+
 
 nextBtn.addEventListener('click', () => {
     counter = (counter < 5) ? counter + 1 : 0;
@@ -18,7 +25,7 @@ nextBtn.addEventListener('click', () => {
 
 
 previousBtn.addEventListener('click', () => {
-    counter = (counter > 0) ? counter - 1 : 0;
+    counter = (counter > 0) ? counter - 1 : 5;
     sliders.style.transform = 'translate(' + (counter) * -15 + '%)';
 })
 
