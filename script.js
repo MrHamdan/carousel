@@ -18,6 +18,8 @@ setInterval(() => {
 }, 8000);
 
 
+
+// Slider Buttons
 nextBtn.addEventListener('click', () => {
     counter = (counter < 5) ? counter + 1 : 0;
     sliders.style.transform = 'translate(' + (counter) * -15 + '%)';
