@@ -1,9 +1,8 @@
+// Sliders
 const sliders = document.querySelector('.sliders');
-
 const slider = Array.from(document.getElementsByClassName('slider'));
 
 // Buttons
-
 const previousBtn = document.getElementById('button-left');
 const nextBtn = document.getElementById('button-right');
 
