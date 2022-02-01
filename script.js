@@ -40,7 +40,6 @@ nextBtn.addEventListener('click', () => {
     document.querySelector('.radios .selected').classList.remove('selected');
     indicatorParent.children[counter].classList.add('selected');
     sliders.style.transform = 'translate(' + (counter) * -15 + '%)';
-    setInterval();
 })
 
 
@@ -49,6 +48,5 @@ previousBtn.addEventListener('click', () => {
     document.querySelector('.radios .selected').classList.remove('selected');
     indicatorParent.children[counter].classList.add('selected');
     sliders.style.transform = 'translate(' + (counter) * -15 + '%)';
-    setInterval();
 })
 
